@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CssBox3</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+      }
+      .col {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .row:first-child {
+        flex-grow: 1;
+      }
+      .row:first-child .col {
+        background-color: #4a5568;
+      }
+      .row:first-child .col:first-child {
+        width: 20%;
+        background-color: #e2e8f0;
+      }
+
+      .row:nth-child(2) {
+        flex-grow: 6;
+      }
+      .row:nth-child(2) .col:nth-child(1) {
+        width: 25%;
+        background-color: #838e9c;
+      }
+      .row:nth-child(2) .col:nth-child(2) {
+        background-color: #cbd5e0;
+      }
+      .row:nth-child(2) .col:nth-child(3) {
+        width: 20%;
+        background-color: #a0aec0;
+      }
+
+      .row:nth-child(3) {
+        flex-grow: 1;
+      }
+      .row:nth-child(3) .col {
+        background-color: #2d3748;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+      </div>
+    </div>
+  </body>
+</html>
